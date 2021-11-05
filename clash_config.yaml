@@ -138,9 +138,22 @@ proxies:
   #   Host: v2ray.com # 填你的主机名
 
 # Trojan
-- name: "trojan_janpan"
+- name: "trojan_Orcal"
   type: trojan
   server: www.anlory.vip
+  port: 443
+  password: anlory
+  # udp: true
+  # sni: example.com # aka server name
+  alpn:
+     - h2
+     - http/1.1
+  # skip-cert-verify: true
+
+  # Trojan
+- name: "trojan_ali"
+  type: trojan
+  server: www.anlory.top
   port: 443
   password: anlory
   # udp: true
@@ -162,7 +175,8 @@ proxy-groups:
     - "ss-obfs"
     - "ss-v2ray"
     - "v2ray"
-    - "trojan"
+    - "trojan_Orcal"
+    - "trojan_ali"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 
@@ -197,7 +211,8 @@ proxy-groups:
     - "ss-obfs"
     - "ss-v2ray"
     - "v2ray"
-    - "trojan"
+    - "trojan_Orcal"
+    - "trojan_ali"
 
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
@@ -222,7 +237,8 @@ proxy-groups:
     - "ss-obfs"
     - "ss-v2ray"
     - "v2ray"
-    - "trojan"
+    - "trojan_Orcal"
+    - "trojan_ali"
 # 大陆流媒体面向港澳台限定服务
 - name: "HKMTMedia"
   type: select
@@ -232,7 +248,8 @@ proxy-groups:
     - "ss-obfs"
     - "ss-v2ray"
     - "v2ray"
-    - "trojan"
+    - "trojan_Orcal"
+    - "trojan_ali"
 
 # 规则
 rules:
