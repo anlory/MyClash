@@ -737,6 +737,11 @@ rules:
 - DOMAIN-SUFFIX,bilibili.com,HKMTMedia
 - DOMAIN,upos-hz-mirrorakam.akamaized.net,HKMTMedia
 
+# > anlory add 
+- DOMAIN-SUFFIX,tradingview.com,PROXY
+- DOMAIN-SUFFIX,notion.so,PROXY
+- DOMAIN-SUFFIX,android.com,PROXY
+- DOMAIN-SUFFIX,github.com,PROXY
 # (DNS Cache Pollution Protection)
 # > Google
 - DOMAIN-SUFFIX,ampproject.org,PROXY
