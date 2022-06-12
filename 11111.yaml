@@ -142,7 +142,7 @@ proxies:
     # Trojan
 - name: "anlory"
   type: trojan
-  server: www.anlory.vip
+  server: anlory.top
   port: 443
   password: anlory
   # udp: true
