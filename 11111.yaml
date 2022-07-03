@@ -151,6 +151,19 @@ proxies:
      - h2
      - http/1.1
   # skip-cert-verify: true
+  
+      # Trojan
+- name: "sunyu"
+  type: trojan
+  server: jp.anlory.top
+  port: 443
+  password: sunyu
+  # udp: true
+  # sni: example.com # aka server name
+  alpn:
+     - h2
+     - http/1.1
+  # skip-cert-verify: true
 
 # 代理组策略
 # 策略组示例请查阅 Clash 项目 README 以使用最新格式：https://github.com/Dreamacro/clash/blob/master/README.md
